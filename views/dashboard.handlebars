@@ -1,0 +1,10 @@
+<h1>Dashboard</h1>
+{{#each userPosts as |post|}}
+    <div>
+        <h2>{{post.title}}</h2>
+        <p>{{post.content}}</p>
+        <!-- Add buttons or links for editing and deleting -->
+    </div>
+{{else}}
+    <p>You haven't created any posts yet.</p>
+{{/each}}
